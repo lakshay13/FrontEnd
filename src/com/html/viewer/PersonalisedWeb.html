@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="WebDescription" content="Blog">
+    <meta name="Author" content="Suri">
+    <title> Lakshay Suri Web</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/VerticalTabStyle.css">
+    <!-- This is reference to the classes which we have used below such as class="w3-text-blue"-->
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+
+<ul id="tab">
+    <li id="tabone"><a href="#home"> Home </a></li>
+    <li id="tabtwo"><a href="#project"> Projects </a></li>
+    <li id="tabthree"><a href="#we"> Work Experience </a></li>
+    <li id="tabfour"><a href="#research"> Research </a></li>
+    <li id="tabfive"><a href="#blog"> Blog </a></li>
+    <li id="tabsix"><a href="#contact"> Contact me</a></li>
+    <!-- abouttag is needed because we have to add a border to the left of this
+    tab as it is on extreme right and hence with the tag we can recognise in
+    the stylesheet-->
+    <li id="abouttag"><a href="#about"> About </a></li>
+</ul>
+
+<!--home tab -->
+<div id="homediv" style="background-color: black">
+    <a id="home">
+         <p class="w3-text-white" align="justify" style="font-size:50px">
+        First Personal Project</p>
+            <p class="w3-text-white" style="font-size:25px; text-align: center">
+        Lakshay Suri
+            </p>
+
+    </a>
+</div>
+<!-- about tab-->
+<div id="aboutdiv" style="background-color: gold">
+    <a id="about">
+        <!--By using two paragraphs within one div easily allows us to place the image to the right
+        of the text-->
+        <p style="float: right;">
+            <img src="../../../images/aboutImage.png" style="width:250px; height:300px;">
+        </p>
+        <!-- purpose of using w3-text-blue is to give a color to the content and
+        purpose of align is to make sure the text is equal across the edges.-->
+        <p class="w3-text-blue" align="justify">
+            <b><i>
+                Hi, This is Lakshay Suri, a software developer based out in Alicante, Spain. I have a
+                fond passion for software development and I believe software development is more about
+                passion than coding. To know more about me, visit my:</i></b> <br>
+            <a href="https://es.linkedin.com/pub/lakshay-suri/51/7a0/436" target="_blank" title="My LinkedIn Profile">
+                <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+            <a href="https://twitter.com/lakshaysuri13" target="_blank" title="My Twitter Profile">
+                <i class="fa fa-twitter fa-lg"></i>
+            </a>
+            <a href="https://www.facebook.com/lakshaysuri13" target="_blank" title="My Facebook Profile">
+                <i class="fa fa-facebook fa-lg"></i>
+            </a>
+        </p>
+
+    </a>
+</div>
+<!-- project tab -->
+<div id="projectdiv" style="background-color: black">
+    <a id="project">
+        <p style="float: left;" class="w3-text-white">
+
+
+        </p>
+
+    </a>
+</div>
+<!-- work experience tab -->
+<div id="wediv" style="background-color: gold;">
+    <a id="we">
+        <!-- The purpose of text-align is to place the text on left and purpose of inherit is to
+        fetch the property of its parent(puts the text in centre than on bottom-->
+        <p style="float: inherit; text-align: left" class="w3-text-white">
+            1. <b>Amdocs, India - Software Production Engineer</b><br>
+            Client - AT&T USA<br>
+            <!-- As u tag for underline is deprecated after html4 therefore
+            making use of css text-decoration-line : underline to give that
+            type-->
+                <span style="text-decoration-line: underline; color: black">
+                <b>Technologies Used - Java, SQL, Cold Fusion </b><br>
+                </span>
+        </p>
+        <!-- The purpose of text-align is to place the text on right-->
+        <p style="float: inherit; text-align: right;" class="w3-text-white">
+            2. Gemalto, Spain - Product Developer<br>
+            Clients - Several MNO's and VMNO's<br>
+            <!-- As u tag for underline is deprecated after html4 therefore
+            making use of css text-decoration-line : underline to give that
+            type-->
+                <span style="text-decoration-line: underline; color: black">
+                <b>Technologies Used - Java, HTML, CSS, JavaScript, SQL<br>
+                    Frameworks - Spring, ThymeLeaf, Hibernate<br>
+                    Testing - Junit (Manual), Selenium (Automation Based)</b><br>
+                </span>
+        </p>
+    </a>
+</div>
+<!-- research tab -->
+<div id="researchdiv" style="background-color: black">
+    <a id="research">
+        <p style="float: inherit; text-align: justify" class="w3-text-white">
+            <b><i>International Publications of Research Papers -</i></b> <br><br>
+            1. Year 2013, IEEE Publication<br>
+            A High Performance and Power Efficient 32-bit Carry Select Adder using Hybrid PTL/CMOS Logic.<br></p>
+        <p class="w3-text-yellow" style="text-align: center">
+            <!-- Purpose of target=_blank is to open the link in the new page and not the same web page-->
+            <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6526509" target="_blank">Research Link 1
+            </a>
+        </p>
+
+        <p style="float: inherit; text-align: justify" class="w3-text-white">
+            2. Year 2013, International Journal of Computer Application Publications<br>
+            Design of Low power 16-bit Square Root Carry Select Adder using Hybrid CMOS/PTL Logic.</p>
+        <p class="w3-text-yellow" style="text-align: center">
+            <a href="http://www.ijcaonline.org/archives/volume69/number10/11881-7696" target="_blank">Research Link 2
+            </a>
+        </p>
+        <br>
+
+
+    </a>
+</div>
+<!-- contact tab -->
+<div id="contactdiv" style="background-color: gold;">
+    <a id="contact">
+        <form action="">
+            <!-- Role of width is to provide the FEEDBACK text the required width on right side,
+             if we decrease this value to 100 the text would go out of web because feedback
+             requires much bigger space according to its font size and we reserve only x
+             space from the right for it.-->
+            <p style="float: right;
+             width: 450px;
+             font-size: 70px;
+             font-style: italic;
+             font-family: 'Comic Sans MS', cursive, sans-serif">
+                FEEDBACK &#9786;
+            </p>
+            <!--class tag will allow to put Name field in blue color-->
+            <p><label class="w3-text-black"> <b><i> Name </i></b></label>
+                <!--class tag will allow to put Name field in blue color-->
+                <input class="w3-input w3-border"
+                       type="text"
+                       name="Name"
+                       id="Name"
+                       style="width:200px"></p>
+
+            <p><label class="w3-text-black"> <b><i> Email </i></b></label>
+                <input class="w3-input w3-border"
+                       type="text"
+                       name="Email-Id"
+                       id="email"
+                       style="width:200px"></p>
+
+            <p><label class="w3-text-black"> <b><i> Contact No (Optional)</i></b> </label>
+                <input class="w3-input w3-border"
+                       type="text"
+                       name="contact"
+                       id="number"
+                       style="width: 200px;"></p>
+
+            <p><label class="w3-text-black"> <b><i> Comments </i></b> </label>
+                <!-- textarea is used for providing a big text box like area to write comments-->
+            <p>
+            <textarea name="comments"
+                      id="comments"
+                      style="width: 200px;">
+
+            </textarea>
+            </p>
+
+            <button class="w3-btn w3-black"> Submit</button>
+        </form>
+    </a>
+</div>
+<!-- footer tab-->
+<!-- padding is space between border and content. The background color is set as black.
+ If we set padding-top: 1px then only top padding will be colored black -->
+<div id="footer" style="background-color: black; padding: 1px">
+    <p style="text-align: center;" class="w3-text-white">
+        <small> &copy Lakshay Suri 2016</small>
+    </p>
+</div>
+</body>
+
+
+<!--TODO Incorporate css code for footer, other images-->
+
+
+</html>
+

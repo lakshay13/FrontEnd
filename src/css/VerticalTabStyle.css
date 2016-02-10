@@ -1,0 +1,63 @@
+ul#tab {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+
+li#tabone,
+#tabtwo,
+#tabthree,
+#tabfour,
+#tabfive,
+#tabsix {
+float: left;
+border-right: 1px solid #bbb;
+}
+
+li#abouttag {
+float: right;
+border-left: 1px solid #bbb;
+}
+
+li#tabone a,
+#tabtwo a,
+#tabthree a,
+#tabfour a,
+#tabfive a,
+#tabsix a,
+#abouttag a{
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li#tabone,
+#tabtwo,
+#tabthree,
+#tabfour,
+#tabfive,
+#tabsix  a:hover {
+background-color: #111;
+}
+
+.active {
+background-color: #4CAF50;
+}
+
+div#homediv,
+#aboutdiv,
+#projectdiv,
+#wediv,
+#researchdiv,
+#contactdiv {
+display: block;
+padding: 250px;
+background-color: #dddddd;
+}
+
+/* LinkedIn, Facebook, Twitter tag style*/
