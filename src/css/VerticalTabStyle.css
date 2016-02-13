@@ -1,3 +1,4 @@
+/* Here Ul is used to give color to the headers*/
 ul#tab {
 list-style-type: none;
 margin: 0;
@@ -31,17 +32,19 @@ li#tabone a,
 display: block;
 color: white;
 text-align: center;
-padding: 14px 16px;
+padding: 14px 14px;
 text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
-li#tabone,
-#tabtwo,
-#tabthree,
-#tabfour,
-#tabfive,
-#tabsix  a:hover {
+
+li#tabone a:hover,
+#tabtwo a:hover,
+#tabthree a:hover,
+#tabfour a:hover,
+#tabfive a:hover,
+#tabsix a:hover,
+#abouttag a:hover{
 background-color: #111;
 }
 
@@ -60,4 +63,56 @@ padding: 250px;
 background-color: #dddddd;
 }
 
-/* LinkedIn, Facebook, Twitter tag style*/
+/*This is required as the content is very large and in order
+for content to fit in the div, display has to be inline-block*/
+div#projectdiv {
+display:inline-block;
+}
+
+/* The purpose of creating that many ids and not doing within
+span in code is for future context as I would be changing the
+style of the content*/
+span#t1,
+span#t2,
+span#t3,
+span#t4,
+span#t5,
+span#t6,
+span#t7,
+span#t8 {
+color: #FFD700;
+}
+
+/* This has been added for fb, in, twitter customised tag*/
+ul#social {
+	overflow: auto;
+}
+
+ul#social,
+li#one,
+li#two,
+li#three {
+	list-style-type: none;
+	float: left;
+}
+
+ul#social a i,
+li#one a i,
+li#two a i,
+li#three a i {
+	background: #205D7A;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 25px;
+	text-align: center;
+	margin-right: 10px;
+	padding-top: 15%;
+}
+
+/* color of about text*/
+
+p#aboutText {
+color: #205D7A;
+}

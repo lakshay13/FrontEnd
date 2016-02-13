@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
 </head>
 
 
@@ -30,13 +29,13 @@
 </ul>
 
 <!--home tab -->
-<div id="homediv" style="background-color: black">
+<div id="homediv" style="background-color: black; text-align: center">
     <a id="home">
-         <p class="w3-text-white" align="justify" style="font-size:50px">
-        First Personal Project</p>
-            <p class="w3-text-white" style="font-size:25px; text-align: center">
-        Lakshay Suri
-            </p>
+        <p class="w3-text-white" align="justify" style="font-size:50px; ">
+            First Personal Project</p>
+        <p class="w3-text-white" style="font-size:25px;">
+            Lakshay Suri
+        </p>
 
     </a>
 </div>
@@ -50,32 +49,59 @@
         </p>
         <!-- purpose of using w3-text-blue is to give a color to the content and
         purpose of align is to make sure the text is equal across the edges.-->
-        <p class="w3-text-blue" align="justify">
+        <p id="aboutText" class="w3-text-Orient" align="justify">
             <b><i>
                 Hi, This is Lakshay Suri, a software developer based out in Alicante, Spain. I have a
                 fond passion for software development and I believe software development is more about
-                passion than coding. To know more about me, visit my:</i></b> <br>
-            <a href="https://es.linkedin.com/pub/lakshay-suri/51/7a0/436" target="_blank" title="My LinkedIn Profile">
-                <i class="fa fa-linkedin fa-lg"></i>
-            </a>
-            <a href="https://twitter.com/lakshaysuri13" target="_blank" title="My Twitter Profile">
-                <i class="fa fa-twitter fa-lg"></i>
-            </a>
-            <a href="https://www.facebook.com/lakshaysuri13" target="_blank" title="My Facebook Profile">
-                <i class="fa fa-facebook fa-lg"></i>
-            </a>
-        </p>
-
+                passion than coding. To know more about me, visit my:</i></b> <br> </p>
+        <ul id="social">
+            <li id="one"><a href="https://es.linkedin.com/pub/lakshay-suri/51/7a0/436" target="_blank"
+                            title="My LinkedIn Profile"><i
+                    class="fa fa-linkedin"></i></a></li>
+            <li id="two"><a href="https://www.facebook.com/lakshaysuri13" target="_blank" title="My Facebook Profile"><i
+                    class="fa fa-facebook"></i></a></li>
+            <li id="three"><a href="https://twitter.com/lakshaysuri13" target="_blank" title="My Twitter Profile"><i
+                    class="fa fa-twitter"></i></a></li>
+        </ul>
     </a>
 </div>
 <!-- project tab -->
-<div id="projectdiv" style="background-color: black">
+<div id="projectdiv" style="background-color: black;">
     <a id="project">
-        <p style="float: left;" class="w3-text-white">
-
-
+        <p class="w3-text-white" align="justify" style="font-size:50px">
+            Projects
         </p>
-
+        <p style="float: left;" align="justify" class="w3-text-white">
+            <span style="font-size:30px; margin:auto; display: table;">BACKEND:</span><br>
+            1. Decoder & Encoder: Implemented End to End Decoder and Encoder for the data received from mobile
+            devices. <br>
+            <span id="t1">Technologies Used</span>: Java<br>
+            <span id="t2">Testing</span>: Junit, Selenium<br>
+        </p>
+        <p style="float: left;" align="justify" class="w3-text-white">
+            2. Application Validation: Implemented Hibernate Validation to validate application constraints for
+            Encoder Use Case. It comprised implementing customisable Hibernate Validator using annotation
+            based and using configuration based(xml)<br>
+            <span id="t3">Technology Used</span>: Java<br>
+            <span id="t4">Framework</span>: Hibernate<br>
+        </p>
+        <p style="float: left;" align="justify" class="w3-text-white">
+            3. Code Quality: Used Sonar Quality Management Tool to identify the code quality issues and hence used
+            the best coding conventions.<br>
+            <span id="t5">Technology Used</span>: Java<br>
+            <span id="t6">Tool</span>: SonarQube<br>
+        </p>
+        <p style="float: left;" align="justify" class="w3-text-white">
+            <span style="font-size:30px; margin:auto; display: table;">FRONTEND:</span><br>
+            4. FrontEnd Viewer: Enhanced the front end viewer that is responsible for showing the decoded results. The
+            task involved<br>
+            a. allowing the viewer to decode zip files greater than 12KB's (refactoring of the code as ThymeLeaf
+            current version could not support efficiently the large zipfile decoding),<br>
+            b. addition of filters on screen,<br>
+            c. improved the displayed content.<br>
+            <span id="t7">Technology Used</span>: HTML, CSS, JavaScript<br>
+            <span id="t8">Framework</span>: ThymeLeaf<br>
+        </p>
     </a>
 </div>
 <!-- work experience tab -->
