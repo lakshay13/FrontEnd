@@ -74,7 +74,7 @@ img {
  left: 30;
  width: auto;
  }
- /* This is done to ensure that the content of paragraph1
+ /* This is done to ensure that the content of paragraph2
  comes on the image*/
  p#p2 {
  position: absolute;
@@ -83,7 +83,7 @@ img {
  width: auto;
  }
 
-  /* This is done to ensure that the content of header2
+  /* This is done to ensure that the content of header3
   comes on the image*/
   h2#three {
   position: absolute;
@@ -91,7 +91,7 @@ img {
   left: 30;
   width: auto;
   }
-  /* This is done to ensure that the content of paragraph1
+  /* This is done to ensure that the content of paragraph3
   comes on the image*/
   p#p3 {
   position: absolute;
