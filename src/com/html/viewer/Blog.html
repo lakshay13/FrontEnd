@@ -3,40 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Lakshay Suri Blog</title>
-    <link rel="stylesheet" type="text/css" href="../../../css/BlogNavigationBar.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/Blog.css">
 </head>
 
 <body>
-<div id = "menu">
-<ul id="blogtab">
-    <li id="bl1"><a href="#b1"> Blog - Coding Conventions </a></li>
-    <li id="bl2"><a href="#b2"> Blog - Selenium Testing </a></li>
-    <li id="bl3"><a href="#b3"> Blog - Hibernate Validation </a></li>
-</ul>
+<div id="menu">
+    <ul id="blogtab">
+        <li id="bl1"><a href="#b1"> Blog - Coding Conventions </a></li>
+        <li id="bl2"><a href="#b2"> Blog - Selenium Testing </a></li>
+        <li id="bl3"><a href="#b3"> Blog - Hibernate Validation </a></li>
+    </ul>
 </div>
 <div id="Blog1" class="blogContatiner">
     <a id="b1">
-        <img src="../../../images/BlogImage1.jpg">
+        <img id="img1" src="../../../images/BlogImage1.jpg">
         <h2 id="one"> Coding Conventions: </h2>
-<p id="p1" style="">
-  1. Always throw Exception instead of Throwable:
-</p>
+        <p id="p1" class="pp1" align="justify">
+            1. Catch statement should avoid catching Throwable
+            It is always recommended to catch Exception instead of Throwable because Throwable would catch
+            out of Memory error, Internal Error etc and <br>ideally the application should not recover from
+            these errors.<br>
+            Example: We should avoid this-<br>
+        </p>
+        <p id="e1" class="pe1">
+            &#10008;
+            catch(Throwable t) {<br>
+            logger.warn("Problem in the code");<br>
+            }
+        </p>
+        <p id="e2" class="pp1">
+            We should be using this<br>
+        </p>
+        <p id="e3" class="pe1">
+            &#10004;
+            catch(Exception e) {<br>
+            logger.warn("Problem in the code");<br>
+            }
+
+        </p>
     </a>
 </div>
 
 <div id="Blog2">
-    <a id = "b2">
-        <img src="../../../images/BlogImage1.jpg">
+    <a id="b2">
+        <img id="img2" src="../../../images/BlogImage1.jpg">
         <h2 id="sec">Selenium Automation Testing</h2>
         <p id="p2" style="">
-           a) Selenium is a web browser based automation testing designed
+            a) Selenium is a web browser based automation testing designed
         </p>
     </a>
 </div>
 
 <div id="Blog3">
     <a id="b3">
-        <img src="../../../images/BlogImage1.jpg">
+        <img id="img3" src="../../../images/BlogImage1.jpg">
         <h2 id="three">Hibernate Validation</h2>
         <p id="p3" style="">
             a) Hibernate Validation is a way to validate

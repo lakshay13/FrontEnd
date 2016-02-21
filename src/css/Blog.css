@@ -41,7 +41,9 @@ background-image: url("BlogImage1.png");
 
 /* This is used to fit the image in the broswer
 and not expand beyong the current size of browser*/
-img {
+img#img1,
+img#img2,
+img#img3 {
     padding: 0;
     display: block;
     margin: 0 auto;
@@ -59,12 +61,37 @@ img {
  }
  /* This is done to ensure that the content of paragraph1
  comes on the image*/
- p#p1 {
+ .pp1 {
  position: absolute;
- top: 100px;
  left: 30;
  width: auto;
  }
+
+ p#p1 {
+ top: 100px;
+}
+/* This is done to ensure that the content of paragraph e1
+ comes on the centre of the image */
+ .pe1 {
+ position: absolute;
+ text-align: center;
+ left: 30%;
+ }
+
+ p#e1 {
+  top: 170px;
+ }
+ /* This is done to ensure that the content of paragraph e2
+  comes on the left of the image */
+ p#e2 {
+  top: 210px;
+ }
+
+ /* This is done to ensure that the content of paragraph e3
+  comes on the centre of the image with class pe1 style */
+  p#e3 {
+  top: 240px;
+  }
 
  /* This is done to ensure that the content of header2
  comes on the image*/
